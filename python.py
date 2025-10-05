@@ -30,10 +30,25 @@ list1.reverse() # 3 2 1
 tuple1 = (1,2,3) 
 tuple1.count(3) # 1
 tuple1.index(1)  # 0
+len(tuple1) # 3
+max(tuple1) # 3
+min(tuple1) # 1
 
+# dictionnary
 
-set1 = {1,2,3} # set
-dict1 = {"a":1,"b":2} # dictionnary
+dict1 = {"a":1,"b":2} 
+dict1["a"] # 1
+len(dict1) # 2
+b in dict1 # True
+dict1.has_key(a) # True
+dict1["c"] = 3 # {"a": 1,"b":2,"c":3}
+dict1["a"] = 0 # {"a": 0,"b":2,"c":3}
+del dict1["a"] # {"b":2,"c":3}
+dict1.clear() # vide
+del dict1 # delete the dictionnary
+
+# Set
+set1 = {1,2,3} 
 
 #conditionals
 if x>5:
@@ -74,4 +89,5 @@ class Dog:
 
 d= Dog("Max")
 d.bark() #woof woof
+
 
